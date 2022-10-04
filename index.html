@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site is my version of the challenge from Front End Mentor. Please, fell free to give me your feedback! It will be very welcome!">
+    <meta name="author" content="The Programmer Count, Mário Gabriel dos Santos Barbosa">
+    <meta name="keywords" content="Front End Mentor, Front end, challenge, Interactive, rating, component">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Links -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modern-reset.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <script src="./script/script.js" defer></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+    <main>
+        <section class="general__container">
+            <article class="image__container">
+                <img src="./assets/icon-star.svg" alt="">
+            </article>
+
+            <section class="info__container">
+                <h1>How did we do?</h1>
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+            </section>
+
+            <section class="rating__container">
+                <ul>
+                    <li><button class="btn">1</button></li>
+                    <li><button class="btn">2</button></li>
+                    <li><button class="btn">3</button></li>
+                    <li><button class="btn">4</button></li>
+                    <li><button class="btn">5</button></li>
+                </ul>
+            </section>
+
+            <section class="hero__container">
+                <button id="hero" class="hero__btn">Submit</button>
+            </section>
+        </section>
+
+        
+        <section class="thank-you__container hidden">
+            <article class="thank-image__container">
+                <img src="./assets/illustration-thank-you.svg" alt="Checked!">
+            </article>
+
+            <article class="result__container">
+                <p class="parag">You selected
+                    <span id="rating"></span>
+                    out of 5
+                </p>
+            </article>
+
+            <article class="acknowledgment__container">
+                <h2>Thank you!</h2>
+                <p class="parag__info">
+                We appreciate you taking the time to give a rating. If you ever need more support, 
+                don't hesitate to get in touch!
+                </p>
+            </article>
+
+            <article class="thank-hero__container">
+                <button id="hero2" class="hero__btn">rate again!</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/GabrielBarbosa92">The Programmer Count</a>.
+        </section>
+  </footer>
+</body>
+</html>

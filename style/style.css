@@ -1,0 +1,186 @@
+
+    :root {
+        --font-Overpass: 'Overpass', sans-serif;
+        --weight-400: 400;
+        --weight-700: 700;
+        --button-transition: all 0.7s ease;
+        --White: hsl(0, 0%, 100%);
+        --Light-Grey: hsl(217, 12%, 63%);
+        --Medium-Grey: hsl(216, 12%, 54%);
+        --Dark-Blue: hsl(213, 20%, 24%);
+        --Very-Dark-Blue: hsl(216, 12%, 8%);
+        --Orange: hsl(25, 97%, 53%);
+    }
+
+    main, .image__container, .rating__container ul li button, .result__container {
+        background-color: var(--Very-Dark-Blue);
+    }
+
+    .info__container h1, .info__container p, .rating__container ul li button, .hero__container button, .thank-hero__container button, .result__container, .acknowledgment__container h2, .parag__info {
+        font-family: var(--font-Overpass);
+    }
+
+    main {
+        min-height: 100vh;
+        padding: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+    }
+
+    .general__container, .thank-you__container {
+        background-color: var(--Dark-Blue);
+        padding: 1.6rem;
+        border-radius: 1.6rem;
+        max-width: 350px;
+    }
+
+    .image__container {
+        padding: 1rem;
+        display: inline-block;
+        border-radius: 50%;
+        margin-bottom: 1.6rem;
+    }
+
+    .info__container h1 {
+        font-size: 2.2rem;
+        color: var(--White);
+        font-weight: var(--weight-700);
+        margin-bottom: 1.6rem;
+    }
+
+    .info__container p {
+        color: var(--Medium-Grey);
+        font-weight: var(--weight-400);
+        margin-bottom: 1.6rem;
+        text-align: left;
+    }
+
+    .rating__container ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rating__container ul li button {
+        font-size: 1.6rem;
+        font-weight: var(--weight-700);
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        color: var(--Medium-Grey);
+    }
+
+    .rating__container ul li button:hover {
+        background-color: var(--Orange);
+        color: var(--White);
+        transition: var(--button-transition);
+    }
+
+    .rating__container ul li button:focus {
+        background-color: var(--Light-Grey);
+        color: var(--White);
+    }
+
+    .hero__container {
+        margin-top: 2rem;
+    }
+
+    .hero__container button, .thank-hero__container button {
+        width: 100%;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: var(--weight-700);
+        color: var(--White);
+        padding: 1rem 0;
+        background-color: var(--Orange);
+        border-radius: 1.6rem;
+        letter-spacing: 2px;
+        transition: var(--button-transition)
+    }
+
+    .hero__container button:hover , .thank-hero__container button:hover {
+        color: var(--Orange);
+        background-color: var(--White);
+    }
+
+    .hero__container button:disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    .hero__btn:disabled:hover {
+        opacity: 0.5;
+        cursor: default;
+        background-color: var(--Orange);
+        color: var(--White);
+    }    
+
+    .thank-you__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.6rem;
+    }
+
+    .result__container {
+        padding: 0.6rem 1rem 0.5rem 1rem;
+        border-radius: 2rem;
+        color: var(--Orange);
+    }
+
+    .acknowledgment__container h2 {
+        color: var(--White);
+        font-weight: var(--weight-700);
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .parag__info {
+        color: var(--Light-Grey);
+        font-weight: var(--weight-400);
+        text-align: center;
+    }
+
+    .thank-hero__container {
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer {
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid var(--White);
+    }
+
+    .attribution { 
+        font-size: 1.6rem;
+        text-align: center;
+        color: var(--White); 
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
